@@ -1,28 +1,21 @@
-# osxiconutils
+# Classiiccons
 
-<img src="http://sveinbjorn.org/images/executable_icon.jpg" width="128" height="128" alt="executable icon" style="float: right; margin-left: 20px; margin-bottom: 20px;" align="right">
+Mac command line tools for working with *.icns* icon files and image file formats.
 
-**NB: No longer maintained by me. Fork and make it better.**
++ `geticon` and `seticon` can be used to get and set an icon of a file or folder.
++ `image2icns` and `icns2image` are there to convert icons from/to images.
 
-`osxiconutils` is a suite of Mac command line utilities to get or set Mac OS X file icons, and convert to and from Apple's `icns` icon file format. Created a long time ago.
+In January 2022 in wanted to learn more about programming in general and image/icon processing in particular. I found and forked the command line utilities suite [*osxiconutils*](https://github.com/sveinbjornt/osxiconutils), which was developed from 2003 by [Sveinbjorn Thordarson](https://github.com/sveinbjornt), who finally stopped his work on it in 2020. “Created a long time ago” wrote Thordarson.
 
-The suite contains the following tools:
+I renamed it to *Classiiccons* because I found the name appropriate for this “historical” work and I have a weakness for extraordinary unique names.
 
-* **seticon** - set the custom icon of a Mac OS X file or folder [<a href="https://sveinbjorn.org/files/manpages/seticon.man.html">man page</a>]
+The *osxiconutils* suite uses [*IconFamily*](http://iconfamily.sourceforge.net/), a Cocoa/Objective-C wrapper for Mac OS X Icon Services’ “IconFamily” data type by Troy Stephens and many other developers.
 
-* **geticon** - retrieve the icon of a given Mac OS X file or folder as an `icns` file [<a href="https://sveinbjorn.org/files/manpages/geticon.man.html">man page</a>]
-
-* **image2icns** - convert an image file to a Mac OS X `icns` file [<a href="https://sveinbjorn.org/files/manpages/image2icns.man.html">man page</a>]
-
-* **icns2image** - convert a Mac OS X `icns` file to a standard image file (JPEG, PNG etc.) [<a href="https://sveinbjorn.org/files/manpages/icns2image.man.html">man page</a>]
-
-## Download
-
-* [**Download osxutils binaries**](https://sveinbjorn.org/files/software/osxiconutils.zip) (~100 KB, Intel 64-bit, 10.6 or later)
+Just don’t expect anything from this repository. It is just for me to learn and understand. There are plenty of modern ports of the components used here.
 
 ## BSD License
 
-Copyright © 2003-2018 Sveinbjorn Thordarson.
+Copyright © 2003-2020 Sveinbjorn Thordarson.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
